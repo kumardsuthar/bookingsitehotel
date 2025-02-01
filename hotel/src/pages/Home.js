@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Hero from '../component/Hero.jsx'
 import Category from '../component/Category'
@@ -7,6 +8,15 @@ function Home() {
     <>
     <Hero/>
       <Homepagetitle/>
+
+      <div className="tophoteltitle">
+      {[...Array(4)].map((_, index) => (
+       
+        <Hotelcard/>
+   
+     ))}
+     </div>
+
     <div className="cate-sec">
 
     {[...Array(4)].map((_, index) => (
@@ -26,3 +36,5 @@ function Home() {
 }
 
 export default Home
+
+
