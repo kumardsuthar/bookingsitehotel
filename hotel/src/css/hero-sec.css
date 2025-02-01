@@ -1,0 +1,87 @@
+.hero{
+    max-width: 1300px;
+    padding: 20px 40px;
+    margin: 30px auto;
+    border-radius: 60px;
+    height: 80vh;
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    background-image: linear-gradient(to bottom, rgba(6, 6, 6, 0.52), rgba(20, 20, 20, 0.73)), url('../media/hero-sec-img.jpg');
+}
+.hero h1{
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: left;
+    color: #fff;
+}
+.hero p{
+    max-width: 800px;
+    margin: 20px 0px;
+    color: #fff;
+    text-align: left;
+}
+.hero button{
+    text-align: left;
+    margin: 40px 0px 10px 0px;
+   background-color: transparent;
+   border: none;
+}
+.hero a{
+    padding: 17px 30px;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #000000;
+    transition: all 150ms;
+}
+
+.hero a:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+/* categoty css */
+.cate-sec{
+    max-width: 1300px;
+    padding: 20px 40px;
+    margin: 30px auto;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 40px 20px;
+}
+
+.category{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    max-width: 340px;
+}
+.category img{
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.category h4{
+    font-weight: 700;
+    font-size: 25px;
+    color: #000;
+    margin: 0px ;
+}
+.category p{
+    color: #727272;
+}
+
+/* home page title */
+
+.homepagetitle h2{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #000;
+    margin: 20px auto 0px auto;
+    text-align: center;
+
+}
