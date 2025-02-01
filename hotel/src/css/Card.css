@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+width: 1200px;
+margin: auto;
+}
+/* .air{
+    content: "•";
+    color: inherit;
+    padding-left: 0.65rem;
+    padding-right: 0.75rem;
+    opacity: 0.8;
+} */
+ .tophoteltitle{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap:20px;
+   max-width: 1380px;
+   margin: 20px auto;
+
+ }
+ .maincard{
+   background-color: var(--bgcolor);
+ }
+ 
+ .card{
+   border: none;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   padding: 6px 9px 7px 9px;
+ }
+ .card img{
+   width: 100%;
+   border-radius: 10px;
+ }
+
+ .rating{
+    background-color: var(--blackcolor);
+    color: #FFF;
+    width: 70px;
+    white-space: nowrap;
+    border-radius: 5px;
+ }
+ .card-thigs span{
+    color: var(--text-gray);
+ }
+
+ .card-thigs i{
+    color: var(--text-gray);
+    padding-left: 10px;
+ }
+
+ .del-price{
+    color: var(--text-gray);
+ }
+ .view-btn{
+    color: var(--bluecolor);
+    font-size: 13px;
+    background-color: rgba(81, 67, 217, 0.1);
+    border-radius: 4px;
+    padding: 9px 9px;
+ }
+ .dolar-price{
+    color: var(--blackcolor); 
+    font-weight: 500;  
+    font-size: 17px;
+    font-weight: 700;
+ }
+
+ @media (max-width:768px) {
+   .tophoteltitle{
+     
+      grid-template-columns: repeat(2,1fr);
+  
+      
+    }
+   
+ }
+ @media (max-width:560px) {
+   .tophoteltitle{
+     
+      grid-template-columns: repeat(1,1fr);
+  
+      
+    }
+   
+ }
