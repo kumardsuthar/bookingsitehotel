@@ -28,8 +28,6 @@ function Footer() {
                                         <li><a href="#" className='f-page'>Contact us</a></li>
                                         <li><a href="#" className='f-page'>Services</a></li>
                                     </div>
-                            
-                              
                                     <div class="link-title">
                                         <h3>Links</h3>
                                         <li><a href="#" className='f-page'>Sign in</a></li>
@@ -37,10 +35,7 @@ function Footer() {
                                         <li><a href="#" className='f-page'>Privacy Policy</a></li>
                                         <li><a href="#" className='f-page'>Tearms</a></li>
                                         <li><a href="#" className='f-page'>Cookie</a></li>
-
                                         <li><a href="#" className='f-page'>Supports</a></li>
-
-
                                     </div>
                                 </div>
 
@@ -58,9 +53,10 @@ function Footer() {
                                         <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                                        
                                        </div>
-                                       
                                     </div>
+
                                 </div>
                             
                         </div>

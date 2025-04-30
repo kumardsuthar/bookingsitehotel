@@ -1,0 +1,236 @@
+.hero-section {
+    background-image: url('../media/hotelimg/hero-hotel.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .search-box {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    color: black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .search-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+  }
+  
+  .search-item:last-child {
+    border-right: none;
+    padding-right: 0;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #555;
+  }
+  
+  .label {
+    font-size: 14px;
+    color: gray;
+    margin: 0;
+  }
+  
+  .value {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .search-icon-wrapper {
+    background: #5e2df1;
+    color: white;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+  }
+  
+  .search-icon {
+    font-size: 20px;
+  }
+  .filters{
+   max-width: 20%;
+   border: solid 1px rgb(203, 201, 201);
+   padding: 20px;
+   border-radius: 10px;
+  
+
+
+  }
+  .transition-container {
+    max-height: 180px;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+  
+  .transition-container.expanded {
+    max-height: 1000px; /* Large enough to show all items */
+  }
+  
+  .checkbox-input {
+    margin-bottom: 6px;
+  }
+  
+  .toggle-btn {
+    margin-top: 10px;
+    color: #2563eb;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .btns{
+    display: flex;
+    gap: 10px;
+  }
+  .result{
+    border-radius: 7px;
+    background-color: #5e2df1;
+    color: white;
+    font-weight: 600;
+    padding: 6px;
+    border: none;
+  }
+  /* Default: mobile view */
+.filters {
+  display: none;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 80%;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+}
+
+/* Show filters if class is active */
+.filters.show {
+  display: block;
+}
+
+/* Button styling */
+.filter-toggle-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Desktop view: always show filters */
+@media screen and (min-width: 768px) {
+  .filters {
+    display: block !important;
+    position: static;
+    height: auto;
+    box-shadow: none;
+    width: 300px;
+  }
+  
+  .filter-toggle-btn {
+    display: none;
+  }
+}
+
+
+  /* =============listingcard============== */
+  .listing-card{
+    padding: 2.0px;
+    display: flex;
+    gap: 30px;
+    border: solid 1px gray;
+    border-radius: 10px;
+  }
+  .star{
+    display: flex;
+    color:#F7C32E;
+    padding-bottom: 10px;
+  }
+  .listing-card{
+    display: flex;
+  }
+  .facility{
+    display: flex;
+    list-style: block;
+  }
+  .confirmation{
+    color: #0CBC87;
+    font-size: 18px;
+
+  }
+  .price{
+    font-weight: 700;
+  }
+  .filterbtn{
+    background-color: #302F36;
+    border-radius: 2px;
+    border: none;
+    padding:4px;
+    color: white;
+  }
+  .listdescription{
+    padding: 30px;
+  }
+ 
+  @media (max-width:640px) {
+    .overlay{
+      display: flex;
+      flex-direction: column;
+      display: none;
+    }
+    .mainfilter{
+      flex-direction: column;
+
+    }
+
+    
+  }
+  @media (max-width:375px) {
+    .search-item{
+      display: flex;
+
+
+    }
+    .overlay{
+      display: flex;
+      flex-direction: column;
+      display: none;
+    }
+    
+  }
+  
+  
+  

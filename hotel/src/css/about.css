@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bgcolor);
+}
+:root {
+    --text-gray: #939497;
+    --bluecolor: #5143D9;
+    --aqacolor: #0CBC87;
+    --blackcolor: #302F36;
+    --bgcolor:#F5F5F6;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+.about-heroSec{
+    max-width: 1200px;
+    margin: auto;
+  
+}
+.aboutsec1 p{
+font-weight: 700;
+font-size: 50px;
+max-width: 70%;
+margin: auto;
+text-align: center;
+}
+.aboutsec1 span{
+
+    font-size: 18px;
+ width: 500px;  
+    margin: auto;
+    /* flex: 0px 0px auto; */
+    /* align-items:  center; */
+    text-align: end;
+    color: var(--text-gray);
+
+   
+}
+.about-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 20px;
+}
+.about-icons img {
+    width: 8%;
+
+}
+.gridsec{
+    margin-top: 10px;
+}
+
+.gridsec img{
+    width: 100%;
+    height: auto;
+
+}
+.our-story h3{
+    font-weight: 700;
+
+}
+
+.our-title1{
+    color: gray;
+    font-weight: 700;
+    font-size: 18px;
+   
+}
+.our-title2{
+    padding-top: 20px;
+
+ color: gray;
+    font-size: 17   px;
+}
+/* ==========booking============== */
+
+.icon-lg {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.icon-lg h5{
+    font-weight: 700;
+
+}
+
+
+
+/* ====mediaquery============ */
+/* 
+@media (max-width: 768px) {
+    .about-icons {
+        flex-direction: column;
+        display: flex;
+        width: 40%;
+    
+    
+    }
+    .gridsec img{
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+} */
+
+@media (max-width: 992px) {
+    .gridsec .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-icons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .aboutsec1 p {
+      font-size: 1.5rem;
+    }
+  
+    .our-title2 {
+      font-size: 0.95rem;
+    }
+    .our-story {
+        width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aboutsec1 span {
+      font-size: 0.9rem;
+    }
+  
+    .our-title1,
+    .our-title2 {
+      padding: 0 10px;
+    }
+  }
+
+

@@ -3,17 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-.container{
-width: 1200px;
-margin: auto;
-}
-/* .air{
-    content: "•";
-    color: inherit;
-    padding-left: 0.65rem;
-    padding-right: 0.75rem;
-    opacity: 0.8;
-} */
+
+
  .tophoteltitle{
    display: grid;
    grid-template-columns: repeat(3,1fr);
@@ -42,6 +33,7 @@ margin: auto;
     width: 70px;
     white-space: nowrap;
     border-radius: 5px;
+    text-align: center ;
  }
  .card-thigs span{
     color: var(--text-gray);
@@ -68,6 +60,79 @@ margin: auto;
     font-size: 17px;
     font-weight: 700;
  }
+ /* ============ category================ */
+ .hotelserch{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+ }
+ .hotelserch input {
+  width: 100%;
+  border-radius: 10px;
+  height: 43px;
+  padding: 10px;
+}
+ .serchbar{
+  display: flex;
+  position: relative;
+ }
+ .serchbar i{
+ padding-left: 10px;
+ position: absolute;
+ left: 80%;
+ top:15px
+ }
+
+.category-card{
+  display: flex;
+ }
+
+ .category-sec{
+  flex-direction: column;
+  text-align: center;
+ }
+ .search{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+ }
+ .categoty-btn{
+  display: flex;
+  justify-content: center;
+  
+ }
+ .categoty-btn button{
+  border: none;
+  border-radius: 10px;
+  padding: 9px 21px;
+  color: white;
+  background-color: #5143D9;
+ }
+
+ .search input{
+  width: 30%;
+
+ }
+ .search h3{
+  white-space: nowrap;
+ }
+
+ .category-sec {
+  padding: 10px;
+  text-align: start;
+  align-items:center;
+}
+
+.category-sec img {
+  width: 100%;
+  border-radius: 12px;
+}
+.category-card{
+  gap: 25px;
+}
+
+ 
 
  @media (max-width:768px) {
    .tophoteltitle{
@@ -82,8 +147,59 @@ margin: auto;
    .tophoteltitle{
      
       grid-template-columns: repeat(1,1fr);
-  
-      
+   
     }
    
  }
+
+ /* =======category============== */
+ 
+ 
+      /* =============hotelcard=============== */
+      @media (max-width: 1024px) {
+        .category-card {
+          display: grid; /* make sure display is set to grid */
+          grid-template-columns: repeat(3, 1fr); /* ✅ use 1fr */
+        }
+      }
+      @media (max-width: 768px) {
+       
+        .category-card {
+
+          display: grid; /* make sure display is set to grid */
+          grid-template-columns: repeat(2, 1fr); 
+       
+        }
+        .categoty-btn{
+
+          justify-content: center;
+   
+        }
+      }
+      @media (max-width: 425px) {
+       
+     
+        .category-card {
+
+          display: grid; /* make sure display is set to grid */
+          grid-template-columns: repeat(1, 1fr); 
+        
+        }
+        .serchbar{
+           display: none;
+        }
+        .categoty-btn{
+          justify-content: center;
+        }
+        .category-sec{
+          display: flex;
+          justify-content: center;
+          place-items: center;
+    
+        }
+        .hotelserch h2{
+          text-align: left;
+        }
+      
+      }
+       

@@ -2,49 +2,57 @@ import React from 'react'
 import '../css/header.css'
 import {
     BrowserRouter as Router,
-    Link
+    Link,
+
   } from "react-router-dom";
 function Header() {
+
+
+ 
   return (
    
 <>
 <div id="desk-header">
     <header>
-       <div>
-          <h3>Logo</h3>
+       <div >
+          <h3><Link to = "/" style={{color:"black"}}>GoTrip</Link></h3>
        </div>
        <div>
           <ul>
             <li>
             <Link to="/about">About Us</Link>
             </li>
+
             <li>
-            <Link to="/about">Hotels</Link>
-            </li>
-            <li>
-            <Link to="/about">Special Offers</Link>
-            </li>
-            <li>
-            <Link to="/about">Blog</Link>
-            </li>
-            <li>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/hotel">Hotels</Link>
             </li>
 
             <li>
-                <a href="#">
+            <Link to="/specialoffer">Special Offers</Link>
+            </li>
+
+            <li>
+            <Link to="/blog">Blog</Link>
+            </li>
+            
+            <li>
+            <Link to="/contactpage">Contact Us</Link>
+            </li>
+
+            <li>
+                <a to="#">
                 <i class="fa-solid fa-bell"></i>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <Link to="/profile">
                 <i class="fa-solid fa-user"></i>
-                </a>
+                </Link>
             </li>
             <li>
-                <a href="#" className='login-btn'>
+                <Link  to="/login" className='login-btn' >
                     Login
-                    </a>
+                    </Link>
             </li>
           </ul>
 
@@ -61,39 +69,41 @@ function Header() {
   </div>
   <div class="offcanvas-body">
   <ul>
-            <li>
-                <a href="#">About us</a>
-            </li>
-            <li>
-                <a href="#">Hotels</a>
-            </li>
-            <li>
-                <a href="#">Speacial Offer</a>
-            </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
-            <li>
-                <a href="#">Contact Us</a>
+  <li>
+            <Link to="/about">About Us</Link>
             </li>
 
-        
-           
+            <li>
+            <Link to="/hotel">Hotels</Link>
+            </li>
+
+            <li>
+            <Link to="/specialoffer">Special Offers</Link>
+            </li>
+
+            <li>
+            <Link to="/blog">Blog</Link>
+            </li>
+            
+            <li>
+            <Link to="/contactpage">Contact Us</Link>
+            
+            </li>
           </ul>
 
           <div className='social-div'>
              <span>
-                <a href="#">
+                <a to="#">
                 <i class="fa-brands fa-instagram"></i>
                 </a>
              </span>
              <span>
-                <a href="#">
+                <a to="#">
                 <i class="fa-brands fa-twitter"></i>
                 </a>
              </span>
              <span>
-                <a href="#">
+                <a to="#">
                 <i class="fa-brands fa-facebook"></i>
                 </a>
              </span>
