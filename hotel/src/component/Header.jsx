@@ -13,7 +13,8 @@ function Header() {
    
 <>
 <div id="desk-header">
-    <header>
+   <div class="container">
+   <header>
        <div >
           <h3><Link to = "/" style={{color:"black"}}>GoTrip</Link></h3>
        </div>
@@ -59,6 +60,7 @@ function Header() {
           <i class="fa-solid fa-bars" id='menu-btn' data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
        </div>
    </header>
+   </div>
    </div>
 
    <div id="mob-header">

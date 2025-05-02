@@ -1,10 +1,10 @@
 .hero{
-    max-width: 1300px;
+    /* max-width: 1300px; */
     padding: 20px 40px;
     margin: 30px auto;
     border-radius: 60px;
     height: 80vh;
-    display: grid;
+    /* display: grid; */
     align-items: center;
     justify-content: start;
     background-image: linear-gradient(to bottom, rgba(6, 6, 6, 0.52), rgba(20, 20, 20, 0.73)), url('../media/hero-sec-img.jpg');
@@ -105,10 +105,10 @@
   }
   @media(max-width:425px) {
     .hero{
-      width: 81%;
-      height: 64vh;
+      width: 90%;
+      height: 53vh;
     } 
     .hero h1{
-      font-size:10px;
+      font-size:20px;
     } 
   }

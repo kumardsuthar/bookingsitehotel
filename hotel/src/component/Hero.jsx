@@ -2,8 +2,9 @@ import React from 'react'
 import '../css/hero-sec.css';
 function Hero() {
   return (
-    <div className='hero'>
-       <div>
+    <div class="container">
+      <div class="hero">
+      <div>
        <h1>
        Find Your Perfect Stay <br /> Book Hotels at the <br /> Best Prices!
        </h1>
@@ -14,7 +15,9 @@ function Hero() {
         <a href="#">Book Your Hotel Now</a>
        </button>
        </div>
+      </div>
     </div>
+    
   )
 }
 
