@@ -35,6 +35,7 @@ function Header() {
             <li>
             <Link to="/blog">Blog</Link>
             </li>
+
             
             <li>
             <Link to="/contactpage">Contact Us</Link>
@@ -76,7 +77,8 @@ function Header() {
             </li>
 
             <li>
-            <Link to="/hotel">Hotels</Link>
+            <Link to="/hotel">Hotels
+            </Link>
             </li>
 
             <li>
